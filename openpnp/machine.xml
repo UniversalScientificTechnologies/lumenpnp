@@ -246,7 +246,7 @@
                      <string>TIP16f0412fef58a913</string>
                      <string>NT1</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="-24.24527727343897" y="-68.580462080721" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-24.50968783367881" y="-69.20975137142108" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="71.735" y="21.636" z="31.0" rotation="0.0"/>
                   <vacuum-actuator-name>PV</vacuum-actuator-name>
                </nozzle>
@@ -268,12 +268,12 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" id="CAM1607555396816" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="500" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="10.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.021844062880215107" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1605385237291" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PnP Top Camera: PnP Top Camera usb-0000:00:14.0-1" format-id="8">
-                  <units-per-pixel units="Millimeters" x="0.012917111571718693" y="0.013001828561660928" z="16.29999999999999" rotation="0.0"/>
-                  <units-per-pixel-secondary units="Millimeters" x="0.012891757437280474" y="0.01296764382108718" z="20.19999999999989" rotation="0.0"/>
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" id="CAM1607555396816" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="500" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="10.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.22178284835327505" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1605385237291" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PnP Top Camera: PnP Top Camera usb-0000:00:14.0-1" format-id="8">
+                  <units-per-pixel units="Millimeters" x="0.012917111571718693" y="0.013001828561660928" z="16.799999999999997" rotation="0.0"/>
+                  <units-per-pixel-secondary units="Millimeters" x="0.011592317065728578" y="0.011639472253792558" z="19.29999999999999" rotation="0.0"/>
                   <camera-primary-z value="0.0" units="Millimeters"/>
                   <camera-secondary-z value="0.0" units="Millimeters"/>
-                  <default-z value="16.29999999999999" units="Millimeters"/>
+                  <default-z value="16.799999999999997" units="Millimeters"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
@@ -326,10 +326,10 @@
             <soft-limits-enabled>false</soft-limits-enabled>
             <pump-actuator-name>PV</pump-actuator-name>
             <homing-fiducial-location units="Millimeters" x="217.134" y="162.433" z="0.0" rotation="0.0"/>
-            <calibration-primary-fiducial-location units="Millimeters" x="217.1243121663212" y="162.42324862857873" z="0.0" rotation="0.0"/>
-            <calibration-secondary-fiducial-location units="Millimeters" x="227.17132708493588" y="167.43214983399994" z="0.0" rotation="0.0"/>
+            <calibration-primary-fiducial-location units="Millimeters" x="217.1243121663212" y="162.42324862857873" z="16.799999999999997" rotation="0.0"/>
+            <calibration-secondary-fiducial-location units="Millimeters" x="193.81001383260306" y="156.7897720101698" z="19.29999999999999" rotation="0.0"/>
             <calibration-primary-fiducial-diameter value="0.9558662563071834" units="Millimeters"/>
-            <calibration-secondary-fiducial-diameter value="0.979773565233316" units="Millimeters"/>
+            <calibration-secondary-fiducial-diameter value="1.9706939011738582" units="Millimeters"/>
             <calibration-test-object-diameter value="3.5248041" units="Millimeters"/>
          </head>
       </heads>
@@ -341,7 +341,7 @@
             <camera-primary-z value="16.189999999999948" units="Millimeters"/>
             <default-z value="61.0" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="216.47735904679922" y="118.34889819829571" z="16.189999999999948" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="216.21294848655938" y="117.71960890759564" z="16.189999999999948" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
             <calibration enabled="true">
                <camera-matrix length="9">3604.5979586695685, 0.0, 670.5180700029018, 0.0, 3441.072004597366, 194.74862660613388, 0.0, 0.0, 1.0</camera-matrix>
@@ -406,7 +406,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin bugfix-2.0.x (May 24 2022 15:57:56) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:Index Pick and Place EXTRUDER_COUNT:0 AXIS_COUNT:6 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff]]></detected-firmware>
-            <reported-axes><![CDATA[X:217.70 Y:162.62 Z:31.50 A:50.00 B:50.00 C:50.00 Count X:8691 Y:6510 Z:1260 A:222 B:222 C:2000]]></reported-axes>
+            <reported-axes><![CDATA[X:217.13 Y:162.43 Z:31.50 A:-70.00 B:50.00 C:50.00 Count X:8665 Y:6539 Z:1260 A:-311 B:222 C:2000]]></reported-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>

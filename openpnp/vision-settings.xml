@@ -166,18 +166,6 @@
          </stages>
       </cv-pipeline>
    </vision-settings>
-   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS1716a7bcb78bb3a7" name="BottomVisionSettings" enabled="false" pre-rotate-usage="Default" check-part-size-method="Disabled" check-size-tolerance-percent="20" max-rotation="Adjust">
-      <cv-pipeline>
-         <stages/>
-      </cv-pipeline>
-      <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-   </vision-settings>
-   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS1716a7bf4fc70248" name="BottomVisionSettings" enabled="false" pre-rotate-usage="Default" check-part-size-method="Disabled" check-size-tolerance-percent="20" max-rotation="Adjust">
-      <cv-pipeline>
-         <stages/>
-      </cv-pipeline>
-      <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-   </vision-settings>
    <vision-settings class="org.openpnp.model.FiducialVisionSettings" id="FVS1716a7eef8d03ad3" name="Test new stock vison" enabled="true">
       <cv-pipeline>
          <stages>

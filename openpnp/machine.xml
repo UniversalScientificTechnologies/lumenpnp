@@ -237,7 +237,7 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" visual-homing-method="ResetToFiducialLocation" nozzle-solution="Standalone" nozzle-solutions-multiplier="1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" axis-Z-id="AXS16982438158d0458" axis-rotation-id="AXS16b068df4e35374e" id="N1" name="N1" rotation-mode="LimitedArticulation" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="500" place-dwell-milliseconds="700" current-nozzle-tip-id="TIP16f0412f7ef9e180" changer-enabled="true" nozzle-tip-changed-on-manual-feed="true" enable-dynamic-safe-z="true" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" axis-Z-id="AXS16982438158d0458" axis-rotation-id="AXS16b068df4e35374e" id="N1" name="N1" rotation-mode="LimitedArticulation" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="500" place-dwell-milliseconds="700" current-nozzle-tip-id="TIP16b1a61b09e0c660" changer-enabled="true" nozzle-tip-changed-on-manual-feed="true" enable-dynamic-safe-z="true" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>TIP16cbc9505c3e1916</string>
                      <string>TIP16b1a61b09e0c660</string>
@@ -662,7 +662,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.0849110538491048" center-y="-0.310329431238546" radius="0.08375813335554741" phase-shift="175.2151965504066" units="Millimeters" peak-error="0.02229550040945468" rms-error="0.012097697888729707"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.06484626962198128" center-y="-0.32623343677510314" radius="0.07081466121929593" phase-shift="-66.54860515176833" units="Millimeters" peak-error="0.016213902297252544" rms-error="0.00863327559980623"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
@@ -918,7 +918,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.036784450913548136" center-y="0.024517588598822315" radius="0.07525497251179644" phase-shift="166.58412330141638" units="Millimeters" peak-error="0.023658337958766505" rms-error="0.01516925021806698"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.050994679601624966" center-y="0.007607937250113993" radius="0.050009102395540954" phase-shift="-109.84103507510082" units="Millimeters" peak-error="0.010240081706269024" rms-error="0.007262573600579385"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
@@ -980,7 +980,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.09865906542881715" center-y="-0.31367447372676754" radius="0.056352955573755095" phase-shift="-173.21393708226222" units="Millimeters" peak-error="0.021956225217624022" rms-error="0.011333105738253522"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.09384207663471461" center-y="-0.31561922741695914" radius="0.05972203282274023" phase-shift="-77.48735830577318" units="Millimeters" peak-error="0.011257283542589218" rms-error="0.006231928675514943"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
@@ -1009,7 +1009,7 @@
       <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="PartHeight" max-vision-retries="3">
          <planner class="org.openpnp.machine.reference.ReferencePnpJobProcessor$SimplePnpJobPlanner"/>
       </pnp-job-processor>
-      <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" fiducial-vision-id="FVS1716a7eef8d03ad3" enabled-averaging="true" repeat-fiducial-recognition="5">
+      <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" fiducial-vision-id="FVS_Stock" enabled-averaging="true" repeat-fiducial-recognition="5">
          <max-distance value="700.0" units="Millimeters"/>
          <tolerances>
             <scaling-tolerance>0.05</scaling-tolerance>

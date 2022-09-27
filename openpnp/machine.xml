@@ -1,5 +1,5 @@
 <openpnp-machine>
-   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.55" auto-tool-select="true" safe-Z-park="true">
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.6900000000000001" auto-tool-select="true" safe-Z-park="true">
       <axes>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS169824381580efcb" name="x" type="X" driver-id="DRV16982438146c1dd4" letter="X" backlash-compensation-method="DirectionalCompensation" backlash-speed-factor="1.0" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -237,7 +237,7 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" visual-homing-method="ResetToFiducialLocation" nozzle-solution="Standalone" nozzle-solutions-multiplier="1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" axis-Z-id="AXS16982438158d0458" axis-rotation-id="AXS16b068df4e35374e" id="N1" name="N1" rotation-mode="LimitedArticulation" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="500" place-dwell-milliseconds="700" changer-enabled="true" nozzle-tip-changed-on-manual-feed="true" enable-dynamic-safe-z="true" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" axis-Z-id="AXS16982438158d0458" axis-rotation-id="AXS16b068df4e35374e" id="N1" name="N1" rotation-mode="LimitedArticulation" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="500" place-dwell-milliseconds="700" current-nozzle-tip-id="TIP16b1a61b09e0c660" changer-enabled="true" nozzle-tip-changed-on-manual-feed="true" enable-dynamic-safe-z="true" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>TIP16cbc9505c3e1916</string>
                      <string>TIP16b1a61b09e0c660</string>
@@ -247,7 +247,7 @@
                      <string>TIP1716efc6a377d2b4</string>
                      <string>TIP16f0412ed2d50009</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="-24.679149055701554" y="-68.37712953610026" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-24.55343729797827" y="-68.62506002308763" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="71.735" y="21.636" z="31.0" rotation="0.0"/>
                   <vacuum-actuator-name>PV</vacuum-actuator-name>
                </nozzle>
@@ -341,11 +341,11 @@
             <soft-limits-enabled>false</soft-limits-enabled>
             <pump-actuator-name>PV</pump-actuator-name>
             <homing-fiducial-location units="Millimeters" x="216.311" y="164.437" z="0.0" rotation="0.0"/>
-            <calibration-primary-fiducial-location units="Millimeters" x="215.99842455712445" y="164.203" z="17.2" rotation="0.0"/>
-            <calibration-secondary-fiducial-location units="Millimeters" x="192.991" y="158.059" z="19.85" rotation="0.0"/>
+            <calibration-primary-fiducial-location units="Millimeters" x="216.398" y="164.403" z="16.5" rotation="0.0"/>
+            <calibration-secondary-fiducial-location units="Millimeters" x="193.101" y="158.199" z="19.04" rotation="0.0"/>
             <calibration-primary-fiducial-diameter value="0.9798372455833765" units="Millimeters"/>
             <calibration-secondary-fiducial-diameter value="1.9781851437649418" units="Millimeters"/>
-            <calibration-test-object-diameter value="3.0494943972576136" units="Millimeters"/>
+            <calibration-test-object-diameter value="3.2987853934640343" units="Millimeters"/>
          </head>
       </heads>
       <signalers/>
@@ -361,7 +361,7 @@
             <camera-primary-z value="31.553333333333335" units="Millimeters"/>
             <default-z value="31.553333333333335" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="216.62544283801364" y="119.67612089274887" z="31.553333333333335" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="216.75115459573692" y="119.4281904057615" z="31.553333333333335" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
             <calibration enabled="true">
                <camera-matrix length="9">3604.5979586695685, 0.0, 670.5180700029018, 0.0, 3441.072004597366, 194.74862660613388, 0.0, 0.0, 1.0</camera-matrix>
@@ -601,7 +601,12 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>N1</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.04818898243182474" center-y="-0.5629435642830715" radius="0.10431898497058487" phase-shift="-125.02769113830877" units="Millimeters" peak-error="0.013909561910075195" rms-error="0.008605749719461412"/>
+                  </entry>
+               </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="2.0" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
@@ -660,7 +665,12 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>N1</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.04685931495327082" center-y="-0.5465732582527845" radius="0.08919418820288857" phase-shift="-113.20793437228014" units="Millimeters" peak-error="0.010663128589256346" rms-error="0.007361185116653713"/>
+                  </entry>
+               </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="2.0" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
@@ -956,7 +966,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.2534192039184468" center-y="-0.47581144091232896" radius="0.05367173905730769" phase-shift="-70.36218458538217" units="Millimeters" peak-error="0.015139710116185479" rms-error="0.007433515645350896"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.0039042560941719012" center-y="-0.5229018644197819" radius="0.05051810908604886" phase-shift="-122.76199779842663" units="Millimeters" peak-error="0.007888232721215123" rms-error="0.005697791090954505"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>

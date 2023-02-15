@@ -272,7 +272,7 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" id="CAM1607555396816" name="Top" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Mean" settle-time-ms="500" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="true" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.07864892728401228" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1716a56089c7f45a" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PnP Top Camera: PnP Top Camera usb-0000:00:14.0-1" format-id="8" freeze-properties="false">
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" id="CAM1607555396816" name="Top" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Mean" settle-time-ms="500" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="true" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.07864892728401228" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.2041884816753927" green-balance="1.1616161616161615" blue-balance="1.0" red-gamma="0.9097565290767384" green-gamma="0.9255661645788031" blue-gamma="1.1861170926740803" deinterlace="false" light-actuator-id="ACT1716a56089c7f45a" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PnP Top Camera: PnP Top Camera usb-0000:00:14.0-1" format-id="8" freeze-properties="false">
                   <units-per-pixel units="Millimeters" x="0.01633062075972294" y="0.016291120294858373" z="17.3" rotation="0.0"/>
                   <units-per-pixel-secondary units="Millimeters" x="0.011636383198617305" y="0.011762954384286475" z="19.29999999999999" rotation="0.0"/>
                   <camera-primary-z value="0.0" units="Millimeters"/>
@@ -323,6 +323,9 @@
                   <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                      <focal-resolution value="0.05" units="Millimeters"/>
                   </focus-provider>
+                  <red-color-map length="8">0.08235294117647059, 0.20784313725490197, 0.34901960784313724, 0.4823529411764706, 0.6, 0.8470588235294118, 0.9450980392156862, 1.0</red-color-map>
+                  <green-color-map length="8">0.10980392156862745, 0.20392156862745098, 0.3333333333333333, 0.47843137254901963, 0.6235294117647059, 0.803921568627451, 0.9372549019607843, 1.0</green-color-map>
+                  <blue-color-map length="8">0.054901960784313725, 0.21176470588235294, 0.36470588235294116, 0.4823529411764706, 0.592156862745098, 0.6980392156862745, 0.803921568627451, 0.9647058823529412</blue-color-map>
                   <back-light-compensation property="BackLightCompensation" value="0"/>
                   <brightness property="Brightness" value="0"/>
                   <contrast property="Contrast" value="128"/>
@@ -333,7 +336,7 @@
                   <hue property="Hue" value="0"/>
                   <power-line-frequency property="PowerLineFrequency" value="1"/>
                   <saturation property="Saturation" value="64"/>
-                  <sharpness property="Sharpness" value="3"/>
+                  <sharpness property="Sharpness" value="0"/>
                   <white-balance property="WhiteBalance" value="4600" auto="false"/>
                   <zoom property="Zoom"/>
                </camera>
@@ -357,7 +360,7 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1614803235898" name="Bottom" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="10.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.2771716157394835" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1605385237291" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PnP Bottom Camera: PnP Bottom C usb-0000:00:14.0-3" format-id="0" freeze-properties="false">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1614803235898" name="Bottom" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="19" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.2771716157394835" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.016" blue-balance="1.0" red-gamma="0.45701799056248577" green-gamma="1.5114516983936306" blue-gamma="1.0611259518255187" deinterlace="false" light-actuator-id="ACT1605385237291" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PnP Bottom Camera: PnP Bottom C usb-0000:00:14.0-3" format-id="8" freeze-properties="false">
             <units-per-pixel units="Millimeters" x="0.0121222755024822" y="0.012107814710301324" z="0.0" rotation="0.0"/>
             <camera-primary-z value="31.553333333333335" units="Millimeters"/>
             <default-z value="31.553333333333335" units="Millimeters"/>
@@ -404,18 +407,21 @@
             <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                <focal-resolution value="0.05" units="Millimeters"/>
             </focus-provider>
+            <red-color-map length="8">0.054901960784313725, 0.17254901960784313, 0.2901960784313726, 0.40784313725490196, 0.5372549019607843, 0.6078431372549019, 0.7568627450980392, 0.9411764705882353</red-color-map>
+            <green-color-map length="8">0.06274509803921569, 0.19607843137254902, 0.32941176470588235, 0.4627450980392157, 0.596078431372549, 0.7333333333333333, 0.8705882352941177, 0.9607843137254902</green-color-map>
+            <blue-color-map length="8">0.06274509803921569, 0.19215686274509805, 0.3176470588235294, 0.5294117647058824, 0.6274509803921569, 0.7176470588235294, 0.8352941176470589, 0.9411764705882353</blue-color-map>
             <back-light-compensation property="BackLightCompensation" value="1"/>
             <brightness property="Brightness" value="0"/>
-            <contrast property="Contrast" value="95"/>
+            <contrast property="Contrast" value="128"/>
             <exposure property="Exposure" value="146" auto="false"/>
             <focus property="Focus"/>
             <gain property="Gain" value="0"/>
             <gamma property="Gamma" value="100"/>
             <hue property="Hue" value="0"/>
             <power-line-frequency property="PowerLineFrequency" value="1"/>
-            <saturation property="Saturation" value="1"/>
-            <sharpness property="Sharpness" value="1"/>
-            <white-balance property="WhiteBalance" value="2800" auto="false"/>
+            <saturation property="Saturation" value="64"/>
+            <sharpness property="Sharpness" value="0"/>
+            <white-balance property="WhiteBalance" value="4600" auto="false"/>
             <zoom property="Zoom"/>
          </camera>
       </cameras>
@@ -943,12 +949,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.8760576052558123" center-y="1.1580242258800957" radius="0.13082812868917035" phase-shift="48.77447170412991" units="Millimeters" peak-error="0.544460501661308" rms-error="0.31880432647153567"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="2.0" units="Millimeters"/>
                <calibration-Z-offset value="-8.0" units="Millimeters"/>

@@ -443,7 +443,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin bugfix-2.0.x (May 24 2022 15:57:56) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:Index Pick and Place EXTRUDER_COUNT:0 AXIS_COUNT:6 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff]]></detected-firmware>
-            <reported-axes><![CDATA[X:240.34 Y:188.39 Z:31.50 A:200.00 B:50.00 C:50.00 Count X:9636 Y:7520 Z:1260 A:888 B:222 C:2000]]></reported-axes>
+            <reported-axes><![CDATA[X:240.35 Y:188.41 Z:31.50 A:200.00 B:50.00 C:50.00 Count X:9637 Y:7519 Z:1260 A:888 B:222 C:2000]]></reported-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>
@@ -454,11 +454,12 @@
                <text><![CDATA[M906 X600 Y600 Z400 ; Set motor currents]]></text>
             </command>
             <command type="HOME_COMMAND">
+               <text><![CDATA[{Acceleration:M204 S%.2f ; Initialize acceleration}]]></text>
                <text><![CDATA[G28 ; Home all axes]]></text>
             </command>
             <command type="MOVE_TO_COMMAND">
-               <text><![CDATA[{Acceleration:M204 S%.2f} ]]></text>
-               <text><![CDATA[G1 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {FeedRate:F%.2f} ; move to target]]></text>
+               <text><![CDATA[{Acceleration:M204 S%.1f }]]></text>
+               <text><![CDATA[G1 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {FeedRate:F%.0f} ; move to target]]></text>
             </command>
             <command type="MOVE_TO_COMPLETE_COMMAND">
                <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
@@ -953,7 +954,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.32959266579382585" center-y="1.1333488935872231" radius="0.0637864591268223" phase-shift="120.5615265347293" units="Millimeters" peak-error="0.010541018963303993" rms-error="0.007531812597506493"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-1.4142098624381478" center-y="1.0368860089257304" radius="0.0632884019266046" phase-shift="120.19489055584539" units="Millimeters" peak-error="0.010474294426263096" rms-error="0.00602520225063061"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>

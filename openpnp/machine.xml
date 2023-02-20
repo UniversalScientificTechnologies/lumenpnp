@@ -437,7 +437,7 @@
          </part-alignment>
       </part-alignments>
       <drivers>
-         <driver class="org.openpnp.machine.reference.driver.GcodeAsyncDriver" id="DRV16982438146c1dd4" name="GcodeDriver" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="180000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000" writer-polling-interval="100" writer-queue-timeout="60000" max-commands-queued="1000" confirmation-flow-control="true" reported-location-confirmation="true" interpolation-max-steps="32" interpolation-jerk-steps="4" interpolation-time-step="0.001" interpolation-min-step="16">
+         <driver class="org.openpnp.machine.reference.driver.GcodeAsyncDriver" id="DRV16982438146c1dd4" name="GcodeDriver" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="180000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="true" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000" writer-polling-interval="100" writer-queue-timeout="60000" max-commands-queued="1000" confirmation-flow-control="false" reported-location-confirmation="true" interpolation-max-steps="32" interpolation-jerk-steps="4" interpolation-time-step="0.001" interpolation-min-step="16">
             <serial line-ending-type="LF" port-name="ttyACM0" baud="115200" flow-control="RtsCts" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
@@ -953,7 +953,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.33192883013537267" center-y="1.1565035704131892" radius="0.06406949529701281" phase-shift="132.47713528009714" units="Millimeters" peak-error="0.010426367396075583" rms-error="0.0066963297719935646"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.32959266579382585" center-y="1.1333488935872231" radius="0.0637864591268223" phase-shift="120.5615265347293" units="Millimeters" peak-error="0.010541018963303993" rms-error="0.007531812597506493"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
@@ -990,7 +990,7 @@
             <board-location-tolerance value="5.0" units="Millimeters"/>
          </tolerances>
       </fiducial-locator>
-      <motion-planner class="org.openpnp.machine.reference.driver.ReferenceAdvancedMotionPlanner" maximum-plan-history="60.0" allow-continuous-motion="false" allow-uncoordinated="false" diagnostics-enabled="false" interpolation-retiming="true" minimum-speed="0.05" show-approximation="true" to-mid-1-speed="1.0" to-mid-2-speed="1.0" to-end-speed="1.0" start-location-enabled="false" mid-1-location-enabled="false" mid-2-location-enabled="false" end-location-enabled="false" to-mid-1-safe-z="true" to-mid-2-safe-z="true" to-end-safe-z="true">
+      <motion-planner class="org.openpnp.machine.reference.driver.ReferenceAdvancedMotionPlanner" maximum-plan-history="60.0" allow-continuous-motion="true" allow-uncoordinated="false" diagnostics-enabled="false" interpolation-retiming="true" minimum-speed="0.05" show-approximation="true" to-mid-1-speed="1.0" to-mid-2-speed="1.0" to-end-speed="1.0" start-location-enabled="false" mid-1-location-enabled="false" mid-2-location-enabled="false" end-location-enabled="false" to-mid-1-safe-z="true" to-mid-2-safe-z="true" to-end-safe-z="true">
          <start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <mid-location-1 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <mid-location-2 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>

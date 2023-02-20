@@ -949,7 +949,12 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>N1</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-1.4062686108661715" center-y="1.057037944182875" radius="0.05027269374836134" phase-shift="69.9779150628131" units="Millimeters" peak-error="0.025557491846677053" rms-error="0.013039321735317728"/>
+                  </entry>
+               </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="2.0" units="Millimeters"/>
                <calibration-Z-offset value="-8.0" units="Millimeters"/>

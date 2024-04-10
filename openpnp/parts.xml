@@ -1,22 +1,30 @@
 <openpnp-parts>
    <part id="FIDUCIAL-HOME" name="Homing Fiducial - Do Not Delete" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0" pick-retry-count="0"/>
-   <part id="SMD-0805-10nF" height-units="Millimeters" height="0.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
-   <part id="SMD-0805-10uF" height-units="Millimeters" height="0.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
-   <part id="SMD-0805-100nF" height-units="Millimeters" height="0.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
-   <part id="D_SMA-M4" height-units="Millimeters" height="0.0" package-id="D_SMA" speed="1.0" pick-retry-count="0"/>
-   <part id="LED_1206-RED" height-units="Millimeters" height="0.0" package-id="LED_1206" speed="1.0" pick-retry-count="0"/>
-   <part id="LED_1206-GREEN" height-units="Millimeters" height="0.0" package-id="LED_1206" speed="1.0" pick-retry-count="0"/>
-   <part id="1812-750mA" height-units="Millimeters" height="0.0" package-id="1812" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-10nF" height-units="Millimeters" height="0.4" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-10uF" height-units="Millimeters" height="0.4" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-100nF" height-units="Millimeters" height="0.4" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="D_SMA-M4" height-units="Millimeters" height="2.0" package-id="D_SMA" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_1206-RED" height-units="Millimeters" height="0.2" package-id="LED_1206" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_1206-GREEN" height-units="Millimeters" height="0.2" package-id="LED_1206" speed="1.0" pick-retry-count="0"/>
+   <part id="1812-750mA" height-units="Millimeters" height="0.3" package-id="1812" speed="1.0" pick-retry-count="0"/>
    <part id="SMD-0805-BLM21PG300SN1D" height-units="Millimeters" height="1.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
-   <part id="SMD-0805-4k7" height-units="Millimeters" height="1.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
-   <part id="SMD-0805-10k" height-units="Millimeters" height="0.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
-   <part id="SMD-0805-270R" name="" height-units="Millimeters" height="1.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
-   <part id="SOT-23-6-USBLC6-2SC6" height-units="Millimeters" height="0.0" package-id="SOT-23-6" speed="1.0" pick-retry-count="0"/>
-   <part id="QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm-FT231XQ" height-units="Millimeters" height="0.0" package-id="QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" speed="1.0" pick-retry-count="0"/>
-   <part id="MountingHole_3mm-M3" height-units="Millimeters" height="0.0" package-id="MountingHole_3mm" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-4k7" height-units="Millimeters" height="0.52" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-10k" height-units="Millimeters" height="0.2" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-6-USBLC6-2SC6" height-units="Millimeters" height="1.0" package-id="SOT-23-6" speed="1.0" pick-retry-count="0"/>
+   <part id="QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm-FT231XQ" height-units="Millimeters" height="1.0" package-id="QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" speed="1.0" pick-retry-count="0"/>
+   <part id="MountingHole_3mm-M3" name="" height-units="Millimeters" height="0.0" package-id="MountingHole_3mm" speed="1.0" pick-retry-count="0"/>
    <part id="USB_B_OST_USB-B1HSxx_Horizontal-USB_B" height-units="Millimeters" height="0.0" package-id="USB_B_OST_USB-B1HSxx_Horizontal" speed="1.0" pick-retry-count="0"/>
-   <part id="Straight_2x03-HEADER_2x03_PARALLEL" height-units="Millimeters" height="0.0" package-id="Straight_2x03" speed="1.0" pick-retry-count="0"/>
-   <part id="Straight_2x01--" height-units="Millimeters" height="0.0" package-id="Straight_2x01" speed="1.0" pick-retry-count="0"/>
-   <part id="Straight_2x01-HEADER_2x01_PARALLEL" height-units="Millimeters" height="0.0" package-id="Straight_2x01" speed="1.0" pick-retry-count="0"/>
-   <part id="Straight_1x01--" height-units="Millimeters" height="0.0" package-id="Straight_1x01" speed="1.0" pick-retry-count="0"/>
+   <part id="MAX232" height-units="Millimeters" height="1.0" package-id="SO-16" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-R-10R" name="" height-units="Millimeters" height="0.52" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-R-270R" name="" height-units="Millimeters" height="0.52" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-C-47pF" name="" height-units="Millimeters" height="0.4" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-R-22R" name="" height-units="Millimeters" height="0.52" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-R-220R" height-units="Millimeters" height="0.4" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-R-33R" height-units="Millimeters" height="0.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-C-10uF-16V" height-units="Millimeters" height="0.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-1210-L-NL322522T-101K" height-units="Millimeters" height="2.0" package-id="LED_1206" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_1206-YELLOW" height-units="Millimeters" height="0.2" package-id="LED_1206" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-C-1uF" height-units="Millimeters" height="0.4" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SMD-0805-R-620R" height-units="Millimeters" height="0.0" package-id="SMD-0805" speed="1.0" pick-retry-count="0"/>
+   <part id="MIC5504-3.3YM5" height-units="Millimeters" height="1.0" package-id="SOT-23-5" speed="1.0" pick-retry-count="0"/>
 </openpnp-parts>

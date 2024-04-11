@@ -329,7 +329,7 @@
                   <back-light-compensation property="BackLightCompensation" value="0"/>
                   <brightness property="Brightness" value="0"/>
                   <contrast property="Contrast" value="128"/>
-                  <exposure property="Exposure" value="234" auto="false"/>
+                  <exposure property="Exposure" value="625" auto="false"/>
                   <focus property="Focus"/>
                   <gain property="Gain" value="0"/>
                   <gamma property="Gamma" value="100"/>
@@ -684,7 +684,7 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR17c4ea88e368f915" name="A10" enabled="true" part-id="1812-750mA" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR17c4ea88e368f915" name="A10" enabled="false" part-id="1812-750mA" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <reference-hole-location units="Millimeters" x="90.15763082214016" y="202.4083067053186" z="16.5" rotation="0.0"/>
             <last-hole-location units="Millimeters" x="90.19796836026572" y="198.41989151064715" z="0.0" rotation="0.0"/>
@@ -857,7 +857,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin bugfix-2.0.x (May 24 2022 15:57:56) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:Index Pick and Place EXTRUDER_COUNT:0 AXIS_COUNT:6 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff]]></detected-firmware>
-            <reported-axes><![CDATA[X:241.17 Y:213.69 Z:31.55 A:200.00 B:50.00 C:50.00 Count X:9653 Y:8551 Z:1262 A:888 B:222 C:2000]]></reported-axes>
+            <reported-axes><![CDATA[X:241.38 Y:214.79 Z:31.55 A:200.00 B:50.00 C:50.00 Count X:9650 Y:8553 Z:1262 A:888 B:222 C:2000]]></reported-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>
@@ -1134,7 +1134,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.13112735557636515" center-y="1.326392310611546" radius="0.11297608129804747" phase-shift="107.5943465992508" units="Millimeters" peak-error="0.03616052236467691" rms-error="0.014155308760453409"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.42826660115390286" center-y="0.28281023614591466" radius="0.10685687416965277" phase-shift="-81.44759507396205" units="Millimeters" peak-error="0.053267586458675825" rms-error="0.01941153723600369"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
